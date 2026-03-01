@@ -18,7 +18,7 @@ const Navbar = () => {
           }
           <div className="text-2xl flex items-center gap-2 uppercase">
             <GiSlicedBread />
-            <p>El Sitio del Baguette</p>
+            <p className="text-primary">La Casa Del Baguette</p>
             <p className="text-secondary">Leños</p>
           </div>
 
@@ -26,12 +26,12 @@ const Navbar = () => {
             //Sección de Menú
           }
           <div className="hidden md:block">
-            <ul className="flex items-center gap-7 text-gray-600">
+            <ul className="flex items-center gap-4">
               {navbarLinks.map((item) => (
                 <li key={item.id}>
                   <a
                     href={item.url}
-                    className="inline-block py-1 px-3 hover:text-primary"
+                    className="relative text-gray-600 font-medium px-4 py-2 rounded-full transition-all duration-300 hover:bg-primary/10 hover:text-primary active:scale-95"
                   >
                     {item.title}
                   </a>

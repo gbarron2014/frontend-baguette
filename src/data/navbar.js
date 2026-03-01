@@ -3,7 +3,7 @@ const navbarLinks = [
     id: 1,
     name: "Home",
     title: "Inicio",
-    url: "/home"
+    url: "/"
   },
   {
     id: 2,
